@@ -7,60 +7,105 @@
 
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa; /* Soft light gray-blue */
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #333;
-    padding: 1em;
+    background-color: #5C6BC0; /* Muted blue */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #333;
 }
 
+/* Navigation Bar */
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
+/* Individual Navigation Items (Tabs) */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
+/* Style the links to look like tabs */
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    padding: 12px 24px;
+    background-color: #7E57C2; /* Softer purple */
+    border-radius: 5px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
 
+/* Change background on hover to give a tab-like effect */
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #5C6BC0; /* Muted blue */
+}
+
+/* Highlight the active tab */
+nav ul li a.active {
+    background-color: #FF4081; /* Fun pinkish hue */
 }
 
 /* Main Content */
 main {
-    padding: 2em;
+    padding: 3em 1em;
     text-align: center;
+    background-color: #fff; /* White background for content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle effect */
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 1000px;
 }
 
+/* Headings */
 h1 {
     color: #333;
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    color: #5C6BC0; /* Muted blue for secondary headings */
+    font-size: 2em;
     margin-bottom: 1em;
 }
 
+/* Paragraphs */
 p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 1.5em;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #5C6BC0; /* Muted blue */
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1.2em;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF4081; /* Fun pinkish hue for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
