@@ -109,3 +109,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
